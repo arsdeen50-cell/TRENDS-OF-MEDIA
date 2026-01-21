@@ -7,43 +7,51 @@ import { Link } from "react-router-dom";
 const showcaseImages = [
   {
     id: 1,
-    title: "Arfa Nutrition",
-    image: "/images/brands/ArfaNutrition-1.webp",
-    pdfUrl: "/pdf-viewer.html?file=/images/pdf/ARFA.pdf&title=Arfa Nutrition Catalogue",
-    category: "Wellness",
+    title: "Pet's Alley",
+    image: "/images/mockup/PETSALLEY.webp",
+    pdfUrl: "/pdf-viewer.html?file=/images/pdf/PETSALLEY.pdf&title=Pets Alley Catalogue",
+    category: "Pet Care",
     num: "01"
   },
   {
     id: 2,
-    title: "Barkat Dry Fruits",
-    image: "/images/brands/b11.webp",
-    pdfUrl: "/pdf-viewer.html?file=/images/pdf/BARKAT.pdf&title=Barkat Dry Fruits Catalogue",
-    category: "Premium Food",
+    title: "Car Source",
+    image: "/images/mockup/CARSOURCE.webp",
+    pdfUrl: "#", // Add specific PDF if available
+    category: "Automotive",
     num: "02"
   },
   {
     id: 3,
-    title: "Powerlifters",
-    image: "/images/brands/p11.webp",
-    pdfUrl: "/pdf-viewer.html?file=/images/pdf/POWERLIFTERS.pdf&title=Powerlifters Catalogue",
-    category: "Nutrition",
+    title: "Nazakat",
+    image: "/images/mockup/NAZAKAT.webp",
+    pdfUrl: "/pdf-viewer.html?file=/images/pdf/NAZAKAT.pdf&title=Nazakat Catalogue",
+    category: "Lifestyle",
     num: "03"
   },
   {
     id: 4,
-    title: "Nazakat",
-    image: "/images/packaging/08.png",
-    pdfUrl: "/pdf-viewer.html?file=/images/pdf/NAZAKAT.pdf&title=Nazakat Catalogue",
-    category: "Lifestyle",
+    title: "Eye Flick",
+    image: "/images/mockup/EYEFLICK.webp",
+    pdfUrl: "#",
+    category: "Optics",
     num: "04"
   },
   {
     id: 5,
-    title: "Pet's Alley",
-    image: "/images/packaging/022.png",
-    pdfUrl: "/pdf-viewer.html?file=/images/pdf/PETSALLEY.pdf&title=Pets Alley Catalogue",
-    category: "Pet Care",
+    title: "Healthy Crunch",
+    image: "/images/mockup/HEALTHYCRUNCH.webp",
+    pdfUrl: "#",
+    category: "Premium Food",
     num: "05"
+  },
+  {
+    id: 6,
+    title: "Arfa Nutrition",
+    image: "/images/mockup/ARFA.webp",
+    pdfUrl: "/pdf-viewer.html?file=/images/pdf/ARFA.pdf&title=Arfa Nutrition Catalogue",
+    category: "Wellness",
+    num: "06"
   }
 ];
 
@@ -130,14 +138,12 @@ const PackagingExhibit = ({
 
 const BrandShowcase = () => {
   return (
-  <section
-  className="py-16 lg:py-24 bg-white overflow-hidden"
-  style={{ marginTop: "-212px" }}
->
-
+    <section
+      className="py-16 lg:py-24 bg-white overflow-hidden"
+      style={{ marginTop: "-212px" }}
+    >
       <div className="container mx-auto px-6">
-
-        {/* SECTION HEADER — ONCE */}
+        {/* SECTION HEADER */}
         <div className="mb-20 lg:mb-32">
           <div className="flex items-center gap-4 mb-4">
             <span className="text-orange-500 font-bold tracking-[0.4em] uppercase text-[10px]">
