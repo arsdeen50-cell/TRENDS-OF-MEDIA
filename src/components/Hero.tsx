@@ -56,7 +56,7 @@ const Hero = () => {
       {/* LEFT SIDEBAR STRIP */}
       <div className="absolute left-0 top-0 h-full w-20 border-r border-gray-100 hidden lg:flex flex-col justify-between py-10 items-center z-20">
         <span className="text-[10px] font-black rotate-180 [writing-mode:vertical-lr] tracking-widest text-gray-300">
-          BIGTRUNK / 2026
+          TRENDS OF MEDIA / 2025
         </span>
         <div className="w-1 h-1 bg-[#FF6B4A] rounded-full" />
       </div>

@@ -20,20 +20,20 @@ const Contact = () => {
     >
       {/* BACKGROUND DECORATION */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-[0.03] whitespace-nowrap">
-        <h2 className="text-[20vw] font-black tracking-tighter">BIGTRUNK</h2>
+        <h2 className="text-[20vw] font-black tracking-tighter">TOM</h2>
       </div>
 
       <div className="container max-w-6xl mx-auto px-6 relative z-10 flex flex-col items-center">
         
         {/* HEADER AREA */}
         <div className="text-center mb-20">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             className="inline-block px-4 py-1.5 rounded-full border border-[#FF6B4A]/20 bg-[#FF6B4A]/5 text-[#FF6B4A] text-[10px] font-black uppercase tracking-[0.4em] mb-6"
           >
             Our Headquarters
-          </motion.div>
+          </motion.div> */}
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -57,9 +57,7 @@ const Contact = () => {
             <div className="space-y-2">
               <h3 className="text-xs font-black uppercase tracking-widest text-gray-300">The Studio</h3>
               <p className="text-xl font-bold leading-snug">
-                506, Town Centre 2,<br />
-                Marol Naka, Andheri East,<br />
-                Mumbai - 400059
+                MUMBAI, INDIA
               </p>
             </div>
           </motion.div>
