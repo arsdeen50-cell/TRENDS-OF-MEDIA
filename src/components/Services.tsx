@@ -61,7 +61,7 @@ const Services = () => {
     <section
       id="services"
       ref={containerRef}
-      className="py-32 lg:py-48 bg-white text-black"
+      className="py-32 lg:py-5 bg-white text-black"
     >
      <div
   className="container mx-auto px-6 lg:px-12"
@@ -73,7 +73,7 @@ const Services = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-20 lg:mb-32"
+          className="mb-20 lg:mb-10"
         >
           <span className="text-sm uppercase tracking-wider text-black/50 mb-6 block">
             (What we do)
@@ -92,9 +92,9 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.08 }}
-              className="group border-t border-black/10 py-12 lg:py-16"
+              className="group border-t border-black/10 py-12 lg:py-10"
             >
-              <div className="grid lg:grid-cols-12 gap-6 lg:gap-12 items-start">
+              <div className="grid lg:grid-cols-12 gap-6 lg:gap-1 items-start">
                 {/* Number */}
                 <span className="lg:col-span-1 text-sm text-black/40">
                   {service.number}

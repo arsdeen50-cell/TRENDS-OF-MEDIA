@@ -35,7 +35,7 @@ const About = () => {
   }, []);
 
   const philosophyText =
-    "WE BUILD THE CREATIVE SYSTEMS AND CAMPAIGNS THAT ELEVATE FOUNDERS AND GLOBAL BRANDS INTO CULTURAL LEADERS";
+    "WE BUILD THE CREATIVE SYSTEMS & CAMPAIGNS THAT ELEVATE Brands";
 
   const words = philosophyText.split(" ");
 
@@ -90,8 +90,28 @@ const About = () => {
                 transition={{ duration: 0.7, delay: 0.15 }}
                 className="about-sub-text"
               >
-                A premium creative studio crafting branding, content, and
-                marketing that drives relevance, impact, and global growth.
+          At Trends of Media, our philosophy is rooted in one belief:
+Great marketing is built on systems, not shortcuts.
+              </motion.p>
+
+                <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.15 }}
+                className="about-sub-text"
+              >
+        We build creative systems and high-impact marketing campaigns that elevate founders, startups, and global brands into cultural and market leaders.
+              </motion.p>
+
+                <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.15 }}
+                className="about-sub-text"
+              >
+         As a premium creative and marketing studio, we blend strategy, creativity, and performance marketing to deliver solutions that drive brand relevance, measurable impact, and sustainable global growth.
               </motion.p>
             </div>
 
@@ -104,7 +124,7 @@ const About = () => {
         .about-section {
           background: #ffffff;
           border-radius: 64px 64px 0 0;
-          margin-top: 80px;
+          margin-top: 50px;
           overflow: hidden;
         }
 
@@ -118,7 +138,6 @@ const About = () => {
         .about-title {
           font-size: clamp(3rem, 6vw, 6rem);
           font-weight: 300;
-          margin-bottom: 80px;
         }
 
         .about-grid {
@@ -164,7 +183,7 @@ const About = () => {
         }
 
         .about-sub-text {
-          margin-top: 40px;
+          margin-top: 20px;
           font-size: 1rem;
           color: #666;
           max-width: 520px;

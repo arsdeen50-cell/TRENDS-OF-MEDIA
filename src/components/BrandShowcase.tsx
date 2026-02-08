@@ -140,7 +140,7 @@ const BrandShowcase = () => {
   return (
     <section
       className="py-16 lg:py-24 bg-white overflow-hidden"
-      style={{ marginTop: "-212px" }}
+      style={{ marginTop: "-112px" }}
     >
       <div className="container mx-auto px-6">
         {/* SECTION HEADER */}
@@ -153,9 +153,9 @@ const BrandShowcase = () => {
           </div>
 
           <h2 className="text-7xl lg:text-[11vw] font-black tracking-tighter leading-[0.8] text-zinc-900 uppercase">
-            Product <br />
+            Our <br />
             <span className="italic font-serif font-light lowercase text-zinc-400">
-              Archive.
+             Work.
             </span>
           </h2>
         </div>
