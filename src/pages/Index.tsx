@@ -28,10 +28,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Trends of Media</title>
+        <title>Digital Marketing Agency in Chembur - Trends of Media</title>
         <meta
           name="description"
-          content="We are a global creative agency that combines design expertise with technology and intelligence to create award-winning digital products."
+          content="Trends of Media is a leading digital marketing agency in Chembur, Mumbai offering social media marketing, performance marketing, web, mobile apps, production & consulting."
         />
       </Helmet>
 

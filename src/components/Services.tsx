@@ -3,25 +3,44 @@ import { motion, useInView } from "framer-motion";
 
 const services = [
   {
-    number: "01",
-    title: "Website Development",
-    description:
-      "Crafting high-performance, visually stunning websites tailored to your brand identity. We focus on user experience, speed, SEO, and modern UI to convert visitors into customers.",
-    capabilities: ["UI/UX", "SEO", "Performance", "Modern Web"],
-  },
+  number: "01",
+  title: "Website Development",
+  description:
+    "Crafting high-performance, visually stunning websites tailored to your brand identity. We focus on user experience, speed, SEO, and modern UI to convert visitors into customers.",
+  bullets: [
+    "Custom website design",
+    "Responsive & mobile-first layouts",
+    "SEO-optimised structure",
+    "Fast loading & secure development",
+  ],
+  capabilities: ["UI/UX", "SEO", "Performance", "Modern Web"],
+},
+
   {
     number: "02",
     title: "Mobile App Development",
     description:
       "Building intuitive and scalable mobile apps for Android & iOS with seamless functionality. From UI/UX to deployment, we deliver smooth, fast, and user-friendly mobile experiences.",
-    capabilities: ["Android", "iOS", "UI/UX", "Deployment"],
+     bullets: [
+    "Android & iOS apps",
+    "Business & startup apps",
+    "UI/UX-focused development",
+    "Secure & scalable architecture",
+  ],
+      capabilities: ["Android", "iOS", "UI/UX", "Deployment"],
   },
   {
     number: "03",
     title: "Branding & Creative Identity",
     description:
       "Creating powerful brand identities that make your business unforgettable. From logos to full brand kits, we build visuals that speak your story and attract customers.",
-    capabilities: ["Branding", "Logo Design", "Visual Identity", "Guidelines"],
+     bullets: [
+    "Brand identity & positioning",
+    "Video production",
+    "Ad creatives & visual design",
+    "Storytelling & content systems",
+  ],
+      capabilities: ["Branding", "Logo Design", "Visual Identity", "Guidelines"],
   },
   {
     number: "04",
@@ -110,6 +129,7 @@ const Services = () => {
                   {service.description}
                 </p>
 
+
                 {/* Capabilities */}
                 <div className="lg:col-span-3 flex flex-wrap gap-2">
                   {service.capabilities.map((cap) => (
@@ -121,6 +141,16 @@ const Services = () => {
                     </span>
                   ))}
                 </div>
+{service.bullets && (
+  <div className="lg:col-span-12 flex justify-center mt-6">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:pl-72 gap-x-6 gap-y-2 list-disc pl-20 text-sm text-black/80">
+      {service.bullets.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  </div>
+)}
+
               </div>
             </motion.div>
           ))}
