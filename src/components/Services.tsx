@@ -3,64 +3,81 @@ import { motion, useInView } from "framer-motion";
 
 const services = [
   {
-  number: "01",
-  title: "Website Development",
-  description:
-    "Crafting high-performance, visually stunning websites tailored to your brand identity. We focus on user experience, speed, SEO, and modern UI to convert visitors into customers.",
-  bullets: [
-    "Custom website design",
-    "Responsive & mobile-first layouts",
-    "SEO-optimised structure",
-    "Fast loading & secure development",
-  ],
-  capabilities: ["UI/UX", "SEO", "Performance", "Modern Web"],
-},
-
+    number: "01",
+    title: "Website Development",
+    description:
+      "We build SEO-friendly, high-performance websites that convert visitors into customers.",
+    bullets: [
+      "Custom website design",
+      "Responsive & mobile-first layouts",
+      "SEO-optimised structure",
+      "Fast loading & secure development",
+    ],
+    capabilities: ["UI/UX", "SEO", "Performance", "Website Development"],
+  },
   {
     number: "02",
     title: "Mobile App Development",
     description:
-      "Building intuitive and scalable mobile apps for Android & iOS with seamless functionality. From UI/UX to deployment, we deliver smooth, fast, and user-friendly mobile experiences.",
-     bullets: [
-    "Android & iOS apps",
-    "Business & startup apps",
-    "UI/UX-focused development",
-    "Secure & scalable architecture",
-  ],
-      capabilities: ["Android", "iOS", "UI/UX", "Deployment"],
+      "Scalable and user-friendly mobile applications built for growth.",
+    bullets: [
+      "Android & iOS apps",
+      "Business & startup apps",
+      "UI/UX-focused development",
+      "Secure & scalable architecture",
+    ],
+    capabilities: ["Android", "iOS", "UI/UX", "Deployment"],
   },
   {
     number: "03",
     title: "Branding & Creative Identity",
     description:
-      "Creating powerful brand identities that make your business unforgettable. From logos to full brand kits, we build visuals that speak your story and attract customers.",
-     bullets: [
-    "Brand identity & positioning",
-    "Video production",
-    "Ad creatives & visual design",
-    "Storytelling & content systems",
-  ],
-      capabilities: ["Branding", "Logo Design", "Visual Identity", "Guidelines"],
+      "We craft brand identities that people remember.",
+    bullets: [
+      "Brand identity & positioning",
+      "Video production",
+      "Ad creatives & visual design",
+      "Storytelling & content systems",
+    ],
+    capabilities: ["Branding", "Logo Design", "Visual Identity", "Guidelines"],
   },
   {
     number: "04",
     title: "Social Media Marketing",
     description:
-      "Growing your brand with strategic content, creativity, and consistent engagement. We build audience-focused communication that boosts reach, followers, and conversions.",
+      "We help brands grow and engage audiences across all major platforms.",
+    bullets: [
+      "Instagram & LinkedIn marketing",
+      "Content creation & reels",
+      "Community engagement",
+      "Storytelling & content systems",
+    ],
     capabilities: ["Content", "Engagement", "Growth", "Analytics"],
   },
   {
     number: "05",
     title: "Performance Marketing",
     description:
-      "Driving measurable results using data-driven ad campaigns across Meta, Google & more. Our campaigns maximize ROI with smart targeting, optimization, and real-time tracking.",
+      "ROI-focused advertising campaigns designed for conversions.",
+    bullets: [
+      "Google Ads",
+      "Meta (Facebook & Instagram) Ads",
+      "Lead generation campaigns",
+      "Conversion tracking & optimisation",
+    ],
     capabilities: ["Meta Ads", "Google Ads", "ROI", "Tracking"],
   },
   {
     number: "06",
     title: "Influencer Marketing",
     description:
-      "Connecting your brand with top influencers across niches to boost visibility and trust. We manage end-to-end campaigns — selection, negotiation, content, and performance tracking.",
+      "We connect your brand with the right influencers across platforms to build credibility, drive engagement, and convert audiences through data-driven campaigns.",
+    bullets: [
+      "Influencer discovery & vetting",
+      "Authentic creator partnerships",
+      "Campaign planning & execution",
+      "Performance tracking, analytics",
+    ],
     capabilities: ["Creators", "Campaigns", "Negotiation", "Tracking"],
   },
   {
@@ -68,6 +85,12 @@ const services = [
     title: "Production Services",
     description:
       "Delivering high-end video, photo, and creative production for brands of all sizes. From concept to final edit, we create cinematic content that elevates your brand presence.",
+    bullets: [
+      "Brand films & promotional videos",
+      "Professional photography shoots",
+      "Creative direction & storytelling",
+      "Editing, post-production",
+    ],
     capabilities: ["Video", "Photography", "Editing", "Creative"],
   },
 ];
@@ -82,11 +105,10 @@ const Services = () => {
       ref={containerRef}
       className="py-32 lg:py-5 bg-white text-black"
     >
-     <div
-  className="container mx-auto px-6 lg:px-12"
-  style={{ marginTop: "-160px" }}
->
-
+      <div
+        className="container mx-auto px-6 lg:px-12"
+        style={{ marginTop: "-160px" }}
+      >
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -114,23 +136,18 @@ const Services = () => {
               className="group border-t border-black/10 py-12 lg:py-10"
             >
               <div className="grid lg:grid-cols-12 gap-6 lg:gap-1 items-start">
-                {/* Number */}
                 <span className="lg:col-span-1 text-sm text-black/40">
                   {service.number}
                 </span>
 
-                {/* Title */}
                 <h3 className="lg:col-span-4 text-2xl lg:text-3xl font-medium transition-transform duration-500 group-hover:translate-x-4">
                   {service.title}
                 </h3>
 
-                {/* Description */}
                 <p className="lg:col-span-4 text-base text-black/70 leading-relaxed">
                   {service.description}
                 </p>
 
-
-                {/* Capabilities */}
                 <div className="lg:col-span-3 flex flex-wrap gap-2">
                   {service.capabilities.map((cap) => (
                     <span
@@ -141,16 +158,16 @@ const Services = () => {
                     </span>
                   ))}
                 </div>
-{service.bullets && (
-  <div className="lg:col-span-12 flex justify-center mt-6">
-    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:pl-72 gap-x-6 gap-y-2 list-disc pl-20 text-sm text-black/80">
-      {service.bullets.map((item) => (
-        <li key={item}>{item}</li>
-      ))}
-    </ul>
-  </div>
-)}
 
+                {service.bullets && (
+                  <div className="lg:col-span-12 flex justify-center mt-6">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:pl-72 gap-x-6 gap-y-2 list-disc pl-20 text-sm text-black/80">
+                      {service.bullets.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}

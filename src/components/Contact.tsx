@@ -57,6 +57,7 @@ const Contact = () => {
             <div className="space-y-2">
               <h3 className="text-xs font-black uppercase tracking-widest text-gray-300">The Studio</h3>
               <p className="text-xl font-bold leading-snug">
+                K House BR P Marg Trombay - 88 <br />
                 MUMBAI, INDIA
               </p>
             </div>
@@ -122,7 +123,7 @@ const Contact = () => {
                 {['Mumbai', 'Delhi', 'Bangalore', 'Dubai'].map((city, idx) => (
                     <button 
                         key={city}
-                        className={`text-[11px] font-black uppercase tracking-[0.3em] transition-all ${idx === 0 ? 'text-[#FF6B4A]' : 'text-gray-300 hover:text-gray-600'}`}
+                        className={text-[11px] font-black uppercase tracking-[0.3em] transition-all ${idx === 0 ? 'text-[#FF6B4A]' : 'text-gray-300 hover:text-gray-600'}}
                     >
                         {city}
                     </button>

@@ -67,8 +67,9 @@ const Clients = () => {
             Trusted Partners
           </span>
           <h2 className="text-3xl lg:text-5xl font-serif text-stone-900">
-            Brands that trust Barkat
-          </h2>
+  Brands Who Trust Us
+</h2>
+
         </motion.div>
       </div>
 

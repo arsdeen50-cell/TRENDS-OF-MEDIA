@@ -152,10 +152,10 @@ const BrandShowcase = () => {
             <div className="h-[1px] w-12 bg-zinc-200" />
           </div>
 
-          <h2 className="text-7xl lg:text-[11vw] font-black tracking-tighter leading-[0.8] text-zinc-900 uppercase">
-            Our <br />
+          <h2 className="text-7xl lg:text-[7vw] font-black tracking-tighter leading-[0.8] text-zinc-900 uppercase">
+            Projects <br />
             <span className="italic font-serif font-light lowercase text-zinc-400">
-             Work.
+              We're Proud Of.
             </span>
           </h2>
         </div>
