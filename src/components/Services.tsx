@@ -103,7 +103,7 @@ const Services = () => {
     <section
       id="services"
       ref={containerRef}
-      className="py-32 lg:py-5 bg-white text-black"
+      className="pt-32 pb-10 lg:pb-0 lg:py-5 bg-white text-black"
     >
       <div
         className="container mx-auto px-6 lg:px-12"
@@ -160,8 +160,8 @@ const Services = () => {
                 </div>
 
                 {service.bullets && (
-                  <div className="lg:col-span-12 flex justify-center mt-6">
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:pl-72 gap-x-6 gap-y-2 list-disc pl-20 text-sm text-black/80">
+                  <div className="lg:col-span-12 lg:flex lg:justify-center mt-6">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:pl-72 gap-x-6 gap-y-2 list-disc pl-5 text-sm text-black/80">
                       {service.bullets.map((item) => (
                         <li key={item}>{item}</li>
                       ))}

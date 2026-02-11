@@ -12,6 +12,8 @@ import Contact from '@/components/Contact';
 import Servicesection from '@/components/Servicesection';
 import Footer from '@/components/Footer';
 import FloatingContact from '@/components/FloatingContact';
+import DigitalMarketingImp from '@/components/DigitalMarketingImp';
+import Blogs from '@/components/Blogs';
 
 const Index = () => {
   useEffect(() => {
@@ -44,9 +46,11 @@ const Index = () => {
           <About />
          
           <Services />
+          <DigitalMarketingImp />
            {/* <Servicesection /> */}
           <BrandShowcase />
           <Clients />
+          <Blogs />
           <Contact />
         </main>
         <Footer />
