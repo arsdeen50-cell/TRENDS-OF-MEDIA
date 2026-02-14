@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const blogData = [
   {
     id: 1,
-    title: "The Future of Digital Marketing in 2025",
+    title: "The Future of Digital Marketing in 2026",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     excerpt: "Discover the latest trends shaping digital marketing",
     date: "Feb 10, 2025",
@@ -29,20 +29,20 @@ const blogData = [
   },
   {
     id: 4,
-    title: "SEO Strategies for 2025",
+    title: "SEO Strategies for 2026",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
     excerpt: "Rank higher with these proven techniques",
     date: "Feb 03, 2025",
     category: "SEO"
   },
-  {
-    id: 5,
-    title: "Social Media Marketing Mastery",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
-    excerpt: "Grow your brand across all platforms",
-    date: "Jan 30, 2025",
-    category: "Social Media"
-  },
+  // {
+  //   id: 5,
+  //   title: "Social Media Marketing Mastery",
+  //   image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
+  //   excerpt: "Grow your brand across all platforms",
+  //   date: "Jan 30, 2025",
+  //   category: "Social Media"
+  // },
   {
     id: 6,
     title: "Content Marketing That Drives Results",
@@ -51,14 +51,14 @@ const blogData = [
     date: "Jan 28, 2025",
     category: "Content"
   },
-  {
-    id: 7,
-    title: "Email Marketing Best Practices",
-    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=600&fit=crop",
-    excerpt: "Boost open rates and conversions",
-    date: "Jan 25, 2025",
-    category: "Email"
-  },
+  // {
+  //   id: 7,
+  //   title: "Email Marketing Best Practices",
+  //   image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=600&fit=crop",
+  //   excerpt: "Boost open rates and conversions",
+  //   date: "Jan 25, 2025",
+  //   category: "Email"
+  // },
   {
     id: 8,
     title: "Branding in the Digital Age",
@@ -120,7 +120,7 @@ const BlogCard = ({ blog, index }) => {
 
       {/* Content */}
       <div className="p-6">
-        <p className="text-gray-400 text-sm mb-2">{blog.date}</p>
+        {/* <p className="text-gray-400 text-sm mb-2">{blog.date}</p> */}
         <h3 className="text-xl font-bold text-black mb-3 group-hover:text-red-500 transition-colors duration-300">
           {blog.title}
         </h3>

@@ -12,7 +12,7 @@ import Footer from './Footer';
 const blogData = [
   {
     id: 1,
-    title: "The Future of Digital Marketing in 2025",
+    title: "The Future of Digital Marketing in 2026",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=800&fit=crop",
     excerpt: "Discover the latest trends shaping digital marketing",
     date: "Feb 10, 2025",
@@ -223,14 +223,14 @@ const blogData = [
   },
   {
     id: 4,
-    title: "SEO Strategies for 2025",
+    title: "SEO Strategies for 2026",
     image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=1920&h=800&fit=crop",
-    date: "Feb 03, 2025",
+    date: "Feb 03, 2026",
     category: "SEO",
     readTime: "7 min read",
     author: "Mike Wilson",
     sections: [
-      { type: 'heading', content: 'SEO in 2025' },
+      { type: 'heading', content: 'SEO in 2026' },
       { type: 'paragraph', content: 'Search Engine Optimization continues to evolve. Here are the strategies that will help you rank higher in search results this year.' },
       { type: 'heading', content: 'Content Quality Over Quantity' },
       { type: 'paragraph', content: 'Google\'s algorithms are getting better at understanding content quality. Focus on creating comprehensive, valuable content that truly helps your audience.' },
@@ -238,21 +238,21 @@ const blogData = [
       { type: 'paragraph', content: 'Ensure your website has a solid technical foundation with fast loading speeds, mobile responsiveness, and proper schema markup.' }
     ]
   },
-  {
-    id: 5,
-    title: "Social Media Marketing Mastery",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1920&h=800&fit=crop",
-    date: "Jan 30, 2025",
-    category: "Social Media",
-    readTime: "9 min read",
-    author: "Emily Chen",
-    sections: [
-      { type: 'heading', content: 'Mastering Social Media' },
-      { type: 'paragraph', content: 'Social media platforms are where your audience spends most of their time. Learn how to create content that cuts through the noise.' },
-      { type: 'heading', content: 'Platform-Specific Strategies' },
-      { type: 'paragraph', content: 'Each social media platform has its own culture and best practices. Tailor your content accordingly.' }
-    ]
-  },
+  // {
+  //   id: 5,
+  //   title: "Social Media Marketing Mastery",
+  //   image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1920&h=800&fit=crop",
+  //   date: "Jan 30, 2025",
+  //   category: "Social Media",
+  //   readTime: "9 min read",
+  //   author: "Emily Chen",
+  //   sections: [
+  //     { type: 'heading', content: 'Mastering Social Media' },
+  //     { type: 'paragraph', content: 'Social media platforms are where your audience spends most of their time. Learn how to create content that cuts through the noise.' },
+  //     { type: 'heading', content: 'Platform-Specific Strategies' },
+  //     { type: 'paragraph', content: 'Each social media platform has its own culture and best practices. Tailor your content accordingly.' }
+  //   ]
+  // },
   {
     id: 6,
     title: "Content Marketing That Drives Results",
@@ -482,18 +482,18 @@ const BlogDetail = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                 >
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <Calendar size={18} />
                     <span>{blog.date}</span>
-                  </div>
+                  </div> */}
                   <div className="flex items-center gap-2">
                     <Clock size={18} />
                     <span>{blog.readTime}</span>
                   </div>
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <Tag size={18} />
                     <span>By {blog.author}</span>
-                  </div>
+                  </div> */}
                 </motion.div>
               </div>
             </div>

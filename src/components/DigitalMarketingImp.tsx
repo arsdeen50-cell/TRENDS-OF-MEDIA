@@ -42,23 +42,22 @@ const DigitalMarketingImp = () => {
       <section ref={sectionRef} className="dm-section">
         <div className="dm-container">
 
-          {/* HEADING */}
-          <motion.h2
-            initial={{ opacity: 0, y: 40 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
-            className="dm-title"
-            aria-label={headingText}
-          >
-            <span ref={textRef} className="dm-title-wrapper">
-              {words.map((word, i) => (
-                <span key={i} className="dm-word">
-                  {word}
-                  {i < words.length - 1 ? "\u00A0" : ""}
-                </span>
-              ))}
-            </span>
-          </motion.h2>
+     <motion.h2
+  initial={{ opacity: 0, y: 40 }}
+  animate={isInView ? { opacity: 1, y: 0 } : {}}
+  transition={{ duration: 0.8 }}
+  className="dm-title text-4xl lg:text-6xl font-semibold mx-auto leading-tight"
+  aria-label={headingText}
+>
+  <span ref={textRef} className="dm-title-wrapper">
+    {words.map((word, i) => (
+      <span key={i} className="dm-word">
+        {word}
+        {i < words.length - 1 ? "\u00A0" : ""}
+      </span>
+    ))}
+  </span>
+</motion.h2>
 
           {/* CONTENT */}
           <motion.p
@@ -106,9 +105,6 @@ const DigitalMarketingImp = () => {
         }
 
         .dm-title {
-          font-size: clamp(1rem, 4vw, 3rem);
-          font-weight: 300;
-          line-height: 1.2;
           margin-bottom: 48px;
           white-space: nowrap;
         }
@@ -130,7 +126,6 @@ const DigitalMarketingImp = () => {
           color: #555;
           max-width: 900px;
           margin: 0 auto 24px;
-          text-align: left;
         }
 
         /* ===== TABLET ===== */
@@ -140,8 +135,7 @@ const DigitalMarketingImp = () => {
           }
 
           .dm-title {
-            font-size: clamp(1.9rem, 5vw, 3.5rem);
-            white-space: normal; /* allow wrap */
+            white-space: normal; 
           }
 
           .dm-title-wrapper {
@@ -163,7 +157,6 @@ const DigitalMarketingImp = () => {
           }
 
           .dm-title {
-            font-size: clamp(1.5rem, 7vw, 2.3rem);
             margin-bottom: 32px;
           }
 
@@ -171,13 +164,6 @@ const DigitalMarketingImp = () => {
             font-size: 0.95rem;
             line-height: 1.6;
             padding: 0 8px;
-          }
-        }
-
-        /* ===== SMALL MOBILE ===== */
-        @media (max-width: 480px) {
-          .dm-title {
-            font-size: clamp(1.3rem, 6vw, 1.8rem);
           }
         }
       `}</style>
