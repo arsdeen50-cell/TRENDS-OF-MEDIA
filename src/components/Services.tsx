@@ -6,95 +6,52 @@ const services = [
     number: "01",
     title: "Website Development",
     description:
-      "We build SEO-friendly, high-performance websites that convert visitors into customers.",
-    bullets: [
-      "Custom website design",
-      "Responsive & mobile-first layouts",
-      "SEO-optimised structure",
-      "Fast loading & secure development",
-    ],
-    capabilities: ["UI/UX", "SEO", "Performance", "Website Development"],
+      "We build SEO-friendly, high-performance websites that convert visitors into customers. Every site we create is structured for search engine visibility, lightning-fast load speeds, and seamless user experience across all devices. From clean code architecture to keyword-optimised content hierarchy, our websites are engineered to rank, engage, and grow your business organically over time.",
+    // capabilities: ["UI/UX", "SEO", "Performance", "Website Development"],
   },
   {
     number: "02",
     title: "Mobile App Development",
     description:
-      "Scalable and user-friendly mobile applications built for growth.",
-    bullets: [
-      "Android & iOS apps",
-      "Business & startup apps",
-      "UI/UX-focused development",
-      "Secure & scalable architecture",
-    ],
-    capabilities: ["Android", "iOS", "UI/UX", "Deployment"],
+      "We design and develop scalable mobile applications that deliver real business results on both Android and iOS platforms. Built with performance, security, and user experience at the core, our apps are crafted to support your growth from launch day to long-term scale. Whether you're a startup or an enterprise, we build solutions that users love and businesses rely on.",
+    // capabilities: ["Android", "iOS", "UI/UX", "Deployment"],
   },
   {
     number: "03",
     title: "Branding & Creative Identity",
     description:
-      "We craft brand identities that people remember.",
-    bullets: [
-      "Brand identity & positioning",
-      "Video production",
-      "Ad creatives & visual design",
-      "Storytelling & content systems",
-    ],
-    capabilities: ["Branding", "Logo Design", "Visual Identity", "Guidelines"],
+      "Your brand is more than a logo — it's the story people tell about you when you're not in the room. We build cohesive brand identities rooted in strategy, visual clarity, and emotional resonance that make your business instantly recognisable. From positioning to visual systems, we craft identities that stand out in crowded markets and stay memorable long after the first impression.",
+    // capabilities: ["Branding", "Logo Design", "Visual Identity", "Guidelines"],
   },
   {
     number: "04",
     title: "Social Media Marketing",
     description:
-      "We help brands grow and engage audiences across all major platforms.",
-    bullets: [
-      "Instagram & LinkedIn marketing",
-      "Content creation & reels",
-      "Community engagement",
-      "Storytelling & content systems",
-    ],
-    capabilities: ["Content", "Engagement", "Growth", "Analytics"],
+      "We help brands build a consistent, compelling presence across Instagram, LinkedIn, and every platform your audience calls home. Our content strategies are built around engagement, storytelling, and community — turning followers into loyal advocates for your brand. With data-backed decisions and creative execution, we grow your social presence in ways that actually move the business forward.",
+    // capabilities: ["Content", "Engagement", "Growth", "Analytics"],
   },
   {
     number: "05",
     title: "Performance Marketing",
     description:
-      "ROI-focused advertising campaigns designed for conversions.",
-    bullets: [
-      "Google Ads",
-      "Meta (Facebook & Instagram) Ads",
-      "Lead generation campaigns",
-      "Conversion tracking & optimisation",
-    ],
-    capabilities: ["Meta Ads", "Google Ads", "ROI", "Tracking"],
+      "Every rupee you spend should work harder — and that's exactly what our performance marketing campaigns are designed to do. We run precision-targeted Google and Meta ad campaigns focused on generating quality leads, driving conversions, and maximising your return on investment. From creative to tracking to optimisation, every element is built around measurable, scalable growth.",
+    // capabilities: ["Meta Ads", "Google Ads", "ROI", "Tracking"],
   },
   {
     number: "06",
     title: "Influencer Marketing",
     description:
-      "We connect your brand with the right influencers across platforms to build credibility, drive engagement, and convert audiences through data-driven campaigns.",
-    bullets: [
-      "Influencer discovery & vetting",
-      "Authentic creator partnerships",
-      "Campaign planning & execution",
-      "Performance tracking, analytics",
-    ],
-    capabilities: ["Creators", "Campaigns", "Negotiation", "Tracking"],
+      "We connect your brand with the right creators — voices your audience already trusts and engages with every day. Our influencer campaigns are built on data-driven discovery, authentic partnerships, and end-to-end execution that drives real results beyond just impressions. From micro-influencers to large-scale collaborations, we manage everything so your brand message reaches further and converts better.",
+    // capabilities: ["Creators", "Campaigns", "Negotiation", "Tracking"],
   },
   {
     number: "07",
     title: "Production Services",
     description:
-      "Delivering high-end video, photo, and creative production for brands of all sizes. From concept to final edit, we create cinematic content that elevates your brand presence.",
-    bullets: [
-      "Brand films & promotional videos",
-      "Professional photography shoots",
-      "Creative direction & storytelling",
-      "Editing, post-production",
-    ],
-    capabilities: ["Video", "Photography", "Editing", "Creative"],
+      "Great content begins with great production — and we deliver both, from concept to final cut. Our team handles brand films, photography, creative direction, and post-production with a cinematic eye and a strategic mind, ensuring every visual asset elevates your brand presence. Whether it's a product shoot or a full campaign film, we create content that stops the scroll and tells your story beautifully.",
+    // capabilities: ["Video", "Photography", "Editing", "Creative"],
   },
 ];
-
 
 const Services = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -104,7 +61,6 @@ const Services = () => {
     <section
       id="services"
       ref={containerRef}
-      /* Added negative margin-top to pull it up significantly */
       className="-mt-20 lg:-mt-32 pt-0 pb-24 lg:pb-32 bg-white text-black overflow-hidden relative z-20"
     >
       <div className="container mx-auto px-6 lg:px-12">
@@ -143,51 +99,18 @@ const Services = () => {
                 </div>
 
                 {/* Title */}
-                <div className="lg:col-span-4">
+                <div className="lg:col-span-3">
                   <h3 className="text-2xl lg:text-4xl font-medium transition-transform duration-500 group-hover:translate-x-4 tracking-tight">
                     {service.title}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <div className="lg:col-span-4">
-                  <p className="text-base lg:text-lg text-black/70 leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-
-                {/* Capabilities Tags */}
-                <div className="lg:col-span-3">
-                  <div className="flex flex-wrap lg:justify-end gap-2">
-                    {service.capabilities.map((cap) => (
-                      <span
-                        key={cap}
-                        className="px-3 py-1 text-[11px] uppercase tracking-wider border border-black/20 rounded-full text-black/80 whitespace-nowrap"
-                      >
-                        {cap}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Bullets - Perfectly Aligned under the Title/Description area */}
-                {service.bullets && (
-                  <div className="lg:col-span-12 mt-10 lg:mt-12">
-                    <div className="grid lg:grid-cols-12">
-                      {/* Spacer to align bullets with Title column */}
-                      <div className="hidden lg:block lg:col-span-1" />
-                      <div className="lg:col-span-11">
-                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 list-disc list-inside md:list-outside text-sm text-black/60 font-medium">
-                          {service.bullets.map((item) => (
-                            <li key={item} className="leading-snug">
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                )}
+               <div className="lg:col-span-8">
+  <p className="text-base lg:text-lg text-black/70 leading-relaxed text-justify">
+    {service.description}
+  </p>
+</div>
               </div>
             </motion.div>
           ))}

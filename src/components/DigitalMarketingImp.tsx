@@ -7,214 +7,144 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DigitalMarketingImp = () => {
   const sectionRef = useRef(null);
-  const titleRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-10%" });
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Scrub animation for the background text
       gsap.fromTo(
         ".dm-word",
-        { opacity: 0.05, y: 20 },
+        { opacity: 0, y: 30 },
         {
           opacity: 1,
           y: 0,
-          stagger: 0.1,
+          stagger: 0.08,
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top 70%",
-            end: "bottom 40%",
+            start: "top 100%",
+            end: "bottom 100%",
             scrub: 1,
           },
         }
       );
     }, sectionRef);
-
     return () => ctx.revert();
   }, []);
 
-  const headingText = "WHY DIGITAL MARKETING IS IMPORTANT";
+  const headingText = "WHY CHOOSE TRENDS OF MEDIA AS YOUR DIGITAL MARKETING AGENCY IN MUMBAI";
   const words = headingText.split(" ");
 
   return (
     <>
-     <section
-  ref={sectionRef}
-  className="dm-section-v3 mt-[-100px]"
->
-        <div className="dm-container-v3">
-          
-          {/* LARGE BACKGROUND HEADING */}
-          <div className="dm-bg-text-wrap">
-            <h2 className="dm-giant-title">
+      <section ref={sectionRef} className="dm-section">
+        <div className="dm-container">
+
+          {/* Heading */}
+          <div className="dm-heading-wrap">
+            <h2 className="dm-heading">
               {words.map((word, i) => (
                 <span key={i} className="dm-word">
-                  {word}
+                  {word}&nbsp;
                 </span>
               ))}
             </h2>
           </div>
 
-          {/* FLOATING CONTENT CARD */}
-          <div className="dm-content-wrapper">
-            <motion.div 
-              initial={{ opacity: 0, y: 100 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="dm-card"
-            >
-              <div className="dm-card-header">
-                <span className="dm-tag">Insight</span>
-                <div className="dm-line" />
-              </div>
-
-              <div className="dm-card-body">
-                <p className="dm-main-para">
-                  Digital marketing is essential in today’s connected world because your audience lives online. From search engines and social media to email and content platforms, digital marketing helps brands reach the right people at the right time with measurable impact.
-                </p>
-                
-                <p className="dm-sub-para">
-                  Unlike traditional marketing, digital strategies offer real-time data, precise targeting, and scalable growth—allowing businesses to build awareness, generate leads, and drive conversions efficiently.
-                </p>
-              </div>
-
-              {/* <div className="dm-card-footer">
-                <button className="dm-explore-btn">
-                  Explore Strategy
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </button>
-              </div> */}
-            </motion.div>
-          </div>
+          {/* Paragraphs */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
+            className="dm-body"
+          >
+            <p className="dm-para">
+              A lot is happening online — but what really matters is how close your brand can get to the right audience at the right moment. Trends of Media is a results-driven digital marketing agency in Mumbai that helps businesses navigate the digital space with strategies that are thoughtful, creative, and built to drive measurable growth.
+            </p>
+            <p className="dm-para">
+              With deep expertise across SEO, social media marketing, performance advertising, influencer campaigns, and web development, we ensure every touchpoint moves your brand forward — bringing clarity, consistency, and real business outcomes that compound over time.
+            </p>
+            <p className="dm-para">
+              Whether you're a startup finding your footing or an established brand ready to scale, we're the digital marketing partner in Mumbai that connects you with your audience across every platform, generates quality leads, and grows your online presence — all with full transparency and measurable impact.
+            </p>
+          </motion.div>
 
         </div>
       </section>
 
       <style>{`
-        .dm-section-v3 {
-          background: #ffff;
-          padding: 160px 0;
+        .dm-section {
+          background: #0a0a0a;
+          padding: 60px 0;
           position: relative;
           overflow: hidden;
+          margin-bottom: 80px;
         }
 
-        .dm-container-v3 {
-          max-width: 1400px;
+        .dm-container {
+          max-width: 1300px;
           margin: 0 auto;
-          padding: 0 40px;
+          padding: 0 0px;
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
+          gap: 60px;
         }
 
-        /* ===== BACKGROUND TEXT ===== */
-        .dm-bg-text-wrap {
+        /* ===== HEADING ===== */
+        .dm-heading-wrap {
           width: 100%;
-          text-align: center;
-          pointer-events: none;
-          margin-bottom: -120px; /* Overlap effect */
         }
 
-        .dm-giant-title {
-          font-size: clamp(4rem, 10vw, 12rem);
-          font-weight: 900;
-          line-height: 0.9;
-          color: #000;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 0 40px;
-          text-transform: uppercase;
-          letter-spacing: -0.05em;
-        }
+       .dm-heading {
+  font-size: clamp(28px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  max-width: 1000px;
+}
 
         .dm-word {
           display: inline-block;
           will-change: transform, opacity;
         }
 
-        /* ===== CONTENT CARD ===== */
-        .dm-content-wrapper {
-          width: 100%;
-          max-width: 800px;
-          z-index: 2;
-        }
-
-        .dm-card {
-          background: #fff;
-          padding: 80px;
-          box-shadow: 0 50px 100px -20px rgba(0,0,0,0.1);
-          border-left: 8px solid #000;
-        }
-
-        .dm-card-header {
+        /* ===== BODY TEXT ===== */
+        .dm-body {
           display: flex;
-          align-items: center;
-          gap: 20px;
-          margin-bottom: 40px;
+          flex-direction: column;
+          gap: 8px;
+          max-width: 1300px;
         }
 
-        .dm-tag {
-          font-weight: 800;
-          text-transform: uppercase;
-          letter-spacing: 0.2em;
-          font-size: 12px;
-          color: #ff2647;
-        }
-
-        .dm-line {
-          height: 1px;
-          flex-grow: 1;
-          background: #eee;
-        }
-
-        .dm-main-para {
-          font-size: 24px;
-          line-height: 1.5;
-          font-weight: 600;
-          color: #111;
-          margin-bottom: 30px;
-        }
-
-        .dm-sub-para {
-          font-size: 16px;
-          line-height: 1.8;
-          color: #666;
-        }
-
-        .dm-card-footer {
-          margin-top: 50px;
-        }
-
-        .dm-explore-btn {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          font-weight: 700;
-          text-transform: uppercase;
-          font-size: 14px;
-          letter-spacing: 0.1em;
-          transition: 0.3s;
-        }
-
-        .dm-explore-btn:hover {
-          gap: 20px;
-          color: #ff2647;
+        .dm-para {
+          font-size: clamp(15px, 1.4vw, 18px);
+          line-height: 1.85;
+          color: rgba(255, 255, 255, 0.65);
+          font-weight: 400;
+          text-align: justify;
         }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
-          .dm-card { padding: 60px; }
-          .dm-bg-text-wrap { margin-bottom: -60px; }
+          .dm-container {
+            padding: 0 40px;
+            gap: 48px;
+          }
         }
 
         @media (max-width: 768px) {
-          .dm-section-v3 { padding: 100px 0; }
-          .dm-card { padding: 40px 30px; }
-          .dm-main-para { font-size: 20px; }
-          .dm-bg-text-wrap { margin-bottom: -40px; }
+          .dm-section {
+            padding: 100px 0;
+          }
+          .dm-container {
+            padding: 0 24px;
+            gap: 36px;
+          }
+          .dm-para {
+            font-size: 15px;
+            text-align: left;
+          }
         }
       `}</style>
     </>
