@@ -130,12 +130,12 @@ const Contact = () => {
                 ))}
             </div> */}
             
-            <Link 
-              to="/contacts"
-              className="group relative px-14 py-5 bg-black text-white rounded-full font-black text-[11px] uppercase tracking-widest transition-all hover:bg-[#FF6B4A] shadow-xl overflow-hidden"
-            >
-              <span className="relative z-10">Start a Project</span>
-            </Link>
+           <Link 
+  to="/contacts"
+  className="group relative px-14 py-5 bg-black text-white rounded-full font-black text-[11px] uppercase tracking-widest transition-all duration-300 hover:bg-[#ff2647] shadow-xl overflow-hidden"
+>
+  <span className="relative z-10">Start a Project</span>
+</Link>
         </div>
 
       </div>
