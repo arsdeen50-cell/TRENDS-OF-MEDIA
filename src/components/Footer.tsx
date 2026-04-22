@@ -39,7 +39,7 @@ const Footer = () => {
     <footer ref={footerRef} className="agency-footer">
       {/* TOP DECORATIVE SECTION WITH CIRCULAR BADGE */}
       <div className="footer-top-accent">
-        <div className="badge-container" onClick={() => navigate("/contacts")}>
+        <div className="badge-container" onClick={() => navigate("/contact-trends-of-media")}>
           <div className="rotating-text-wrap">
             <svg viewBox="0 0 100 100" className="rotating-svg">
               <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
@@ -92,8 +92,8 @@ const Footer = () => {
 
           <div className="footer-grid-col">
             <h3>COMPANY</h3>
-            <p onClick={() => navigate("/about")}>Our Story</p>
-            <p onClick={() => navigate("/contacts")}>Contact Us</p>
+            <p onClick={() => navigate("/about-trends-of-media")}>Our Story</p>
+            <p onClick={() => navigate("/contact-trends-of-media")}>Contact Us</p>
             {/* <p>Careers</p> */}
           </div>
 

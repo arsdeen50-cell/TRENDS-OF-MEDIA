@@ -132,7 +132,7 @@ const Header = () => {
             <div className="flex items-center gap-4">
               {/* CONTACT BUTTON */}
               <button
-                onClick={() => navigate("/contacts")}
+                onClick={() => navigate("/contact-trends-of-media")}
                 className="hidden lg:flex items-center px-4 h-10 text-sm font-medium border border-black rounded-full hover:bg-black hover:text-white transition"
               >
                 Contact
@@ -195,9 +195,9 @@ const Header = () => {
               <div className="flex flex-col gap-6 text-[12vw] lg:text-[4vw] font-semibold">
                 {[
                   { label: "WORK", route: "/projects" },
-                  { label: "SERVICES", route: "/services" },
-                  { label: "STUDIO", route: "/about" },
-                  { label: "CONTACT", route: "/contacts" },
+                  { label: "SERVICES", route: "/services-digital-marketing" },
+                  { label: "STUDIO", route: "/about-trends-of-media" },
+                  { label: "CONTACT", route: "/contact-trends-of-media" },
                 ].map((item, i) => (
                   <motion.div
                     key={item.label}

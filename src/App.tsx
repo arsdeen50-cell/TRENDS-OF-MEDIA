@@ -26,15 +26,15 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/about" element={<AboutPage />} />
+            <Route path="/About-trends-of-media" element={<AboutPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services-digital-marketing" element={<ServicesPage />} />
 
             {/* ✅ SERVICE DETAIL ROUTE */}
             <Route path="/service/:slug" element={<ServiceDetail />} />
 
             <Route path="/brand/:brandId" element={<BrandDetailsPage />} />
-            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/contact-trends-of-media" element={<ContactsPage />} />
              <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
