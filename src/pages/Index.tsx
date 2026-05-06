@@ -15,46 +15,72 @@ import DigitalMarketingImp from '@/components/DigitalMarketingImp';
 import Blogs from '@/components/Blogs';
 
 const Index = () => {
-  useEffect(() => {
-    const link = document.createElement('link');
-    link.href =
-      'https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
+useEffect(() => {
+const link = document.createElement('link');
+link.href =
+'https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap';
+link.rel = 'stylesheet';
+document.head.appendChild(link);
 
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
 
-  return (
-    <>
-      <Helmet>
-        <title>Trends of Media | No.1 Digital Marketing Agency in Mumbai</title>
-        <meta
-          name="description"
-          content="Trends of Media is a leading digital marketing agency offering SEO, branding, and social media services to grow your business."
-        />
-      </Helmet>
+return () => {
+  document.head.removeChild(link);
+};
 
-      <SmoothScroll>
-        <CustomCursor />
-        <Header />
-        <FloatingContact />
-        <main>
-          <Hero />
-          <About />
-          <Services />
-          <DigitalMarketingImp />
-          <BrandShowcase />
-          <Clients />
-          <Blogs />
-          <Contact />
-        </main>
-        <Footer />
-      </SmoothScroll>
-    </>
-  );
+
+}, []);
+
+return (
+<> <Helmet>
+{/* Title */} <title>Trends of Media | No.1 Digital Marketing Agency in Mumbai</title>
+
+
+    {/* Basic SEO */}
+    <meta
+      name="description"
+      content="Trends of Media is a leading digital marketing agency offering SEO, branding, and social media services to grow your business."
+    />
+
+    {/* Canonical (IMPORTANT) */}
+    <link rel="canonical" href="https://www.trendsofmedia.com/" />
+
+    {/* Robots */}
+    <meta name="robots" content="index, follow" />
+
+    {/* Open Graph (Social Sharing) */}
+    <meta property="og:title" content="Trends of Media | No.1 Digital Marketing Agency in Mumbai" />
+    <meta property="og:description" content="Trends of Media is a leading digital marketing agency offering SEO, branding, and social media services to grow your business." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.trendsofmedia.com/" />
+    <meta property="og:image" content="https://www.trendsofmedia.com/images/Medialogo.png" />
+
+    {/* Twitter SEO */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trends of Media | No.1 Digital Marketing Agency in Mumbai" />
+    <meta name="twitter:description" content="Trends of Media is a leading digital marketing agency offering SEO, branding, and social media services to grow your business." />
+    <meta name="twitter:image" content="https://www.trendsofmedia.com/images/Medialogo.png" />
+  </Helmet>
+
+  <SmoothScroll>
+    <CustomCursor />
+    <Header />
+    <FloatingContact />
+    <main>
+      <Hero />
+      <About />
+      <Services />
+      <DigitalMarketingImp />
+      <BrandShowcase />
+      <Clients />
+      <Blogs />
+      <Contact />
+    </main>
+    <Footer />
+  </SmoothScroll>
+</>
+
+
+);
 };
 
 export default Index;

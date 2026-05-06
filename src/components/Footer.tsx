@@ -74,21 +74,22 @@ const Footer = () => {
             <p onClick={() => navigate("/projects")}>Portfolio</p>
           </div>
 
-          <div className="footer-grid-col">
-            <h3>SERVICES</h3>
-            {[
-              "WEBSITE DESIGN",
-              "FRONT-END DEVELOPMENT",
-              "BACK-END DEVELOPMENT",
-              "WEBSITE SUPPORT",
-              "SOCIAL MEDIA ADVERTISING",
-              "SEO",
-            ].map((s) => (
-              <p key={s} onClick={() => navigate("/services")}>
-                {s}
-              </p>
-            ))}
-          </div>
+         <div className="footer-grid-col">
+  <h3>SERVICES</h3>
+
+  {[
+    { name: "WEBSITE DESIGN", path: "/service/website-development" },
+    { name: "FRONT-END DEVELOPMENT", path: "/service/website-development" },
+    { name: "BACK-END DEVELOPMENT", path: "/service/website-development" },
+    { name: "WEBSITE SUPPORT", path: "/service/website-development" },
+    { name: "SOCIAL MEDIA ADVERTISING", path: "/service/social-media-marketing" },
+    { name: "SEO", path: "/services-digital-marketing" },
+  ].map((item) => (
+    <p key={item.name} onClick={() => navigate(item.path)}>
+      {item.name}
+    </p>
+  ))}
+</div>
 
           <div className="footer-grid-col">
             <h3>COMPANY</h3>
@@ -98,11 +99,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-grid-col newsletter-col">
-            {/* <h3>NEWSLETTER</h3> */}
-            {/* <div className="modern-input-group">
-              <input placeholder="Your Email" />
-              <button className="input-submit-btn">↗</button>
-            </div> */}
+            
 
             <div className="contact-links">
               <h3>CONNECT</h3>
