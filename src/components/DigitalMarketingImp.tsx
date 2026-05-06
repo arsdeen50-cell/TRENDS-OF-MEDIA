@@ -71,8 +71,7 @@ const DigitalMarketingImp = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="dm-secondary-text"
             >
-              Unlike traditional marketing, digital strategies offer real-time data, precise targeting, and scalable growth—allowing businesses to build awareness, generate leads, and drive conversions efficiently.
-            </motion.p>
+             Unlike traditional marketing, digital strategies offer real-time data, precise targeting, and scalable growth allowing businesses to build awareness, generate leads, and drive conversions efficiently. </motion.p>
           </div>
         </div>
       </section>
@@ -98,14 +97,14 @@ const DigitalMarketingImp = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
             className="dm-body-dark"
           >
-            <p className="dm-para">
-              A lot is happening online — but what really matters is how close your brand can get to the right audience at the right moment. Trends of Media is a results-driven digital marketing agency in Mumbai that helps businesses navigate the digital space with strategies that are thoughtful, creative, and built to drive measurable growth.
+           <p className="dm-para">
+              A lot is happening online but what really matters is how close your brand can get to the right audience at the right moment. Trends of Media is a results driven digital marketing agency in Mumbai that helps businesses navigate the digital space with strategies that are thoughtful, creative, and built to drive measurable growth.
             </p>
-            <p className="dm-para">
-              With deep expertise across SEO, social media marketing, performance advertising, influencer campaigns, and web development, we ensure every touchpoint moves your brand forward — bringing clarity, consistency, and real business outcomes that compound over time.
+             <p className="dm-para">
+              With deep expertise across SEO, social media marketing, performance advertising, influencer campaigns, and web development, we ensure every touchpoint moves your brand forward bringing clarity, consistency, and real business outcomes that compound over time.
             </p>
-            <p className="dm-para">
-              Whether you're a startup finding your footing or an established brand ready to scale, we're the digital marketing partner in Mumbai that connects you with your audience across every platform, generates quality leads, and grows your online presence — all with full transparency and measurable impact.
+             <p className="dm-para">
+              Whether you're a startup finding your footing or an established brand ready to scale, we're the digital marketing partner in Mumbai that connects you with your audience across every platform, generates quality leads, and grows your online presence all with full transparency and measurable impact.
             </p>
           </motion.div>
         </div>
