@@ -17,7 +17,7 @@ const showcaseImages = [
     id: 2,
     title: "Barkat Dry Fruits",
     image: "/images/mockup/Barkat2.webp",
-    pdfUrl: "#",
+    pdfUrl: "/pdf-viewer.html?file=/images/pdf/BARKAT.pdf&title=Barkat Dry Fruits Catalogue",
     category: "Branding, Packaging & Strategy",
     num: "02"
   },
@@ -33,7 +33,7 @@ const showcaseImages = [
     id: 4,
     title: "Powelifter",
     image: "/images/mockup/Scene_Creator_Stationery.webp",
-    pdfUrl: "#",
+    pdfUrl: "/pdf-viewer.html?file=/images/pdf/Powerlifter.pdf&title=Powerlifter Catalogue",
     category: "Branding, Packaging & Strategy",
     num: "04"
   },
@@ -41,7 +41,7 @@ const showcaseImages = [
     id: 5,
     title: "EYEFLICK",
     image: "/images/mockup/EYEFLICK.webp",
-    pdfUrl: "#",
+    pdfUrl: "/pdf-viewer.html?file=/images/pdf/EYEFLICK.pdf&title=EYEFLICK Catalogue",
     category: "Branding, Packaging & Strategy",
     num: "05"
   },
@@ -49,7 +49,7 @@ const showcaseImages = [
     id: 6,
     title: "NAZAKAT",
     image: "/images/mockup/NAZAKAT.webp",
-    pdfUrl: "/pdf-viewer.html?file=/images/pdf/NAZAKAT.pdf&title=Nazakat Catalogue",
+    pdfUrl: "/pdf-viewer.html?file=/images/pdf/nazakat.pdf&title=nazakat Catalogue",
     category: "Branding, Packaging & Strategy",
     num: "06"
   }
